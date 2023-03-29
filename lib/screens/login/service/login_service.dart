@@ -10,11 +10,12 @@ class LoginService {
     Dio dio = Dio();
     final url = ApiUrl();
     try {
+      log('try keri');
+      log(model.email.toString());
+      log(model.password.toString());
       Response response = await dio.post(
         url.loginUrl,
-        data: jsonEncode(
-          model.toJson(),
-        ),
+        data: jsonEncode(model.toJson()),
       );
       log(response.statusCode.toString(), name: 'login status code');
       if (response.statusCode! >= 200 && response.statusCode! <= 299) {
