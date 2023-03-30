@@ -10,7 +10,7 @@ class SignInController extends GetxController {
     isLoading = true;
     update();
     final signinModel = SignInModel(
-      email: 'joginder@revoo.in',
+      username: 'joginder@revoo.in',
       password: 'password',
     );
     // loginservice.signinUser(signinModel).then((value) {

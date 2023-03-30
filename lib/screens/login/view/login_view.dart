@@ -16,8 +16,8 @@ class ScreenLogin extends StatelessWidget {
             onPressed: () {
               LoginService().signinUser(
                 SignInModel(
-                  email: 'joginder@revoo.in',
-                  password: 'password',
+                  username: 'nihalrijui915@gmail.com',
+                  password: 'nihal123',
                 ),
               );
             },
