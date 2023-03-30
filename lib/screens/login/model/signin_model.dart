@@ -9,14 +9,14 @@ class SignInModel {
 
   factory SignInModel.fromJson(Map<String, dynamic> json) {
     return SignInModel(
-      username: json["username"] ?? '',
-      password: json["password"] ?? '',
+      username: json['username'] ?? '',
+      password: json['password'] ?? '',
     );
   }
   Map<String, dynamic> toJson() {
     return {
-      "username": username,
-      "password": password,
+      'username': username,
+      'password': password,
     };
   }
 }
